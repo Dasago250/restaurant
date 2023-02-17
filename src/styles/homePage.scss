@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Tamil:ital,wght@1,300&display=swap');
+.home-page{
+  height: 100%;
+  background-image: linear-gradient(0deg, rgba($color: #181814, $alpha: 0.6),rgba($color: #181814, $alpha: 0.6)) ,url(../../src/img/HomePage-Background.jpg);
+  background-size: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  font-family: 'Noto Serif Tamil', serif;
+  .title-message{
+    color: #FFF;
+    text-align: center;
+    h3{
+      font-size: 128px;
+    }
+    p{
+      font-size: 60px;
+    }
+  }
+
+  .card{
+    width: 700px;
+    height: 400px;
+    color: #FFF;
+    background-color: rgba($color: #181814, $alpha: 0.6);
+    border: 3px solid #AA870B ;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+    .schedule-card, .location-card{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 40% 60%;
+      align-items: center;
+      h3{
+        font-size: 40px;
+      }
+      p{
+        font-size: 36px;
+      }
+    }
+    .schedule-card{
+      border-bottom: 2px solid #AA870B;
+    }
+  }
+}

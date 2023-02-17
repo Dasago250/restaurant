@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ homePage)\n/* harmony export */ });\nfunction homePage() {\n  const main = document.createElement('main');\n  const titleMessage = document.createElement('div');\n  const title = document.createElement('h3');\n  const message = document.createElement('p');\n  const card = document.createElement('div');\n  const scheduleCard = document.createElement('div');\n  const scheduleTitle = document.createElement('h3');\n  const scheduleContent = document.createElement('div');\n  const scheduleContentP1 = document.createElement('p');\n  const scheduleContentP2 = document.createElement('p');\n  const locationCard = document.createElement('div');\n  const locationTitle = document.createElement('h3');\n  const locationContent = document.createElement('div');\n  const locationContentP1 = document.createElement('p');\n  const locationContentP2 = document.createElement('p');\n\n  main.classList.add('home-page');\n  titleMessage.classList.add('title-message');\n  card.classList.add('card');\n  // Title\n  titleMessage.appendChild(title);\n  titleMessage.appendChild(message);\n\n  // Schedule\n  scheduleCard.classList.add('schedule-card');\n  scheduleContent.classList.add('schedule-content');\n  scheduleContent.appendChild(scheduleContentP1);\n  scheduleContent.appendChild(scheduleContentP2);\n  scheduleCard.appendChild(scheduleTitle);\n  scheduleCard.appendChild(scheduleContent);\n\n  // Location\n  locationCard.classList.add('location-card');\n  locationContent.classList.add('location-content');\n  locationContent.appendChild(locationContentP1);\n  locationContent.appendChild(locationContentP2);\n  locationCard.appendChild(locationTitle);\n  locationCard.appendChild(locationContent);\n\n  card.appendChild(scheduleCard);\n  card.appendChild(locationCard);\n  main.appendChild(titleMessage);\n  main.appendChild(card);\n\n  title.textContent = 'Welcome';\n  message.textContent = 'Sit and Enjoy';\n  scheduleTitle.textContent = 'Schedules';\n  scheduleContentP1.textContent = 'Mon - Fri: 9am - 9pm';\n  scheduleContentP2.textContent = 'Sat - Sun: 10am - 12pm';\n  locationTitle.textContent = 'Location';\n  locationContentP1.textContent = '9999 Long Ave';\n  locationContentP2.textContent = 'Silver City, Codfish CA';\n\n  return main;\n}\n\n\n//# sourceURL=webpack://restaurant/./src/home.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _menuBar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./menuBar */ \"./src/menuBar.js\");\n\n\nconst content = document.querySelector('.content');\n\ncontent.appendChild((0,_menuBar__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\n\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _menuBar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./menuBar */ \"./src/menuBar.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n\n\n\nconst content = document.querySelector('.content');\n\ncontent.appendChild((0,_menuBar__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\ncontent.appendChild((0,_home__WEBPACK_IMPORTED_MODULE_1__[\"default\"])());\n\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
 
 /***/ }),
 
