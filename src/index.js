@@ -5,4 +5,23 @@ import menuPage from './menu';
 const content = document.querySelector('.content');
 
 content.appendChild(menuBar());
-content.appendChild(menuPage());
+content.appendChild(homePage());
+
+content.addEventListener('click', (e) => {
+  switch (e.target.className) {
+    case 'homeBtn':
+      content.removeChild(content.lastElementChild);
+      content.appendChild(homePage());
+      break;
+    case 'menuBtn':
+      content.removeChild(content.lastElementChild);
+      content.appendChild(menuPage());
+      break;
+    case 'aboutBtn':
+      break;
+    case 'contactBtn':
+      break;
+    default:
+      break;
+  }
+});

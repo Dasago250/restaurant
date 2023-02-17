@@ -22,7 +22,7 @@ const items = [
 
 // Function to create the main part of the menu page
 export default function menuPage() {
-  const main = document.createElement('menu-page');
+  const main = document.createElement('main');
   const carte = document.createElement('div');
   const title = document.createElement('h2');
   const products = document.createElement('div');
