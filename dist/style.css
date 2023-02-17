@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noto+Serif+Tamil&display=swap");
+header {
+  background-color: #000;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+header h1 {
+  grid-column: 2/3;
+  color: #AA870B;
+  font-size: 70px;
+  margin: 10px;
+  font-family: "Dancing Script", cursive;
+}
+header button {
+  background-color: #000;
+  border: 0;
+  color: #FFF;
+  font-size: 30px;
+  font-family: "Noto Serif Tamil", serif;
+}
+header .menuList {
+  display: flex;
+  gap: 20px;
+}
+header .reserveBtn {
+  background-color: #AA870B;
+  border-radius: 50px;
+  width: 200px;
+  height: 50px;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
