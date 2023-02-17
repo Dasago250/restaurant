@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Tamil:ital,wght@1,300&display=swap');
+.menu-page{
+  height: 100%;
+  background-image: linear-gradient(0deg, rgba($color: #181814, $alpha: 0.6),rgba($color: #181814, $alpha: 0.6)) ,url(../../src/img/MenuPage-Background.jpg);
+  background-size:cover;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .carte{
+    width: 90%;
+    min-height: 80%;
+    margin:50px 0;
+    padding: 50px 0;
+    background-color: rgba($color: #181814, $alpha: 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    font-family: 'Noto Serif Tamil', serif;
+    h2{
+      color: #FFF;
+      font-size: 96px;
+    }
+    .products{
+      width: 100%;
+      color: #FFF;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-auto-rows: 1fr;
+      justify-items: center;
+      align-items: center;
+      row-gap: 50px;
+      text-align: center;
+      .card{
+        img{
+          border-radius: 15px;
+        }
+        .textCard{
+          p{
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
+}

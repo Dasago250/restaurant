@@ -16,9 +16,13 @@ export default function menuBar() {
   reserveBtn.textContent = 'Reserve';
 
   homeBtn.classList.add('homeBtn');
+  homeBtn.classList.add('menuListBtn');
   menuBtn.classList.add('menuBtn');
+  menuBtn.classList.add('menuListBtn');
   aboutBtn.classList.add('aboutBtn');
+  aboutBtn.classList.add('menuListBtn');
   contactBtn.classList.add('contactBtn');
+  contactBtn.classList.add('menuListBtn');
   reserveBtn.classList.add('reserveBtn');
   menuList.classList.add('menuList');
 

@@ -1,3 +1,4 @@
+// Function to create the main elements of the menu page
 export default function homePage() {
   const main = document.createElement('main');
   const titleMessage = document.createElement('div');
