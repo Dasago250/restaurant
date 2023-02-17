@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Tamil:ital,wght@1,300&display=swap');
+.contact-page{
+  height: 100%;
+  background-image: linear-gradient(0deg, rgba($color: #181814, $alpha: 0.6),rgba($color: #181814, $alpha: 0.6)) ,url(../../src/img/ContactPage-Background.jpg);
+  background-size: 100%;
+  flex: 1;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+  font-family: 'Noto Serif Tamil', serif;
+  h2{
+    font-size: 100px;
+  }
+  .contacts{
+    width: 65%;
+    height: 500px;
+    background-color: rgba($color: #181814, $alpha: 0.6);
+    border: 3px solid #AA870B ;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    .contactCell{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      h3{
+        font-size: 50px;
+      }
+      p, i{
+        font-size: 40px;
+      }
+    }
+    .contactPhone, .contactEmail{
+      border-bottom: 2px solid #AA870B;
+    }
+    .contactSocials{
+      .socials{
+        display: flex;
+        gap: 30px;
+      }
+    }
+  }
+}

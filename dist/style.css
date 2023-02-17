@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Tamil:ital,wght@1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Tamil:ital,wght@1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Tamil:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Tamil:ital,wght@1,300&display=swap");
 header {
   background-color: #000;
   display: grid;
@@ -76,12 +77,13 @@ header .reserveBtn {
 }
 .home-page .card .schedule-card h3, .home-page .card .location-card h3 {
   font-size: 40px;
+  border-bottom: 2px solid #AA870B;
 }
 .home-page .card .schedule-card p, .home-page .card .location-card p {
   font-size: 36px;
 }
 .home-page .card .schedule-card {
-  border-bottom: 2px solid #AA870B;
+  border-bottom: 3px solid #AA870B;
 }
 
 .menu-page {
@@ -148,6 +150,53 @@ header .reserveBtn {
   width: 80%;
   text-align: center;
   font-size: 30px;
+}
+
+.contact-page {
+  height: 100%;
+  background-image: linear-gradient(0deg, rgba(24, 24, 20, 0.6), rgba(24, 24, 20, 0.6)), url(../../src/img/ContactPage-Background.jpg);
+  background-size: 100%;
+  flex: 1;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+  font-family: "Noto Serif Tamil", serif;
+}
+.contact-page h2 {
+  font-size: 100px;
+}
+.contact-page .contacts {
+  width: 65%;
+  height: 500px;
+  background-color: rgba(24, 24, 20, 0.6);
+  border: 3px solid #AA870B;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+.contact-page .contacts .contactCell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.contact-page .contacts .contactCell h3 {
+  font-size: 50px;
+}
+.contact-page .contacts .contactCell p, .contact-page .contacts .contactCell i {
+  font-size: 40px;
+}
+.contact-page .contacts .contactPhone, .contact-page .contacts .contactEmail {
+  border-bottom: 2px solid #AA870B;
+}
+.contact-page .contacts .contactSocials .socials {
+  display: flex;
+  gap: 30px;
 }
 
 * {
