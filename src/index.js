@@ -1,6 +1,7 @@
 import menuBar from './menuBar';
 import homePage from './home';
 import menuPage from './menu';
+import aboutPage from './about';
 
 const content = document.querySelector('.content');
 
@@ -18,6 +19,8 @@ content.addEventListener('click', (e) => {
       content.appendChild(menuPage());
       break;
     case 'aboutBtn':
+      content.removeChild(content.lastElementChild);
+      content.appendChild(aboutPage());
       break;
     case 'contactBtn':
       break;
