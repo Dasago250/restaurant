@@ -29,6 +29,9 @@ header .menuList {
   display: flex;
   gap: 20px;
 }
+header .menuList button:hover {
+  color: #AA870B;
+}
 header .reserveBtn {
   background-color: #AA870B;
   border-radius: 50px;

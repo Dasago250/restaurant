@@ -24,6 +24,11 @@ header{
   .menuList{
     display: flex;
     gap: 20px;
+    button{
+    &:hover{
+      color: #AA870B;
+    }
+    }
   }
   .reserveBtn{
     background-color: #AA870B;
